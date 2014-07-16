@@ -10,7 +10,7 @@ todoApp.controller('todoController', function ($scope, $http) {
     $scope.createTask = function (event) {
         if (event.keyCode === 13) {
             $scope.tasks.push({
-                name: $scope.inpTask,
+                title: $scope.inpTask,
                 done: false
             });
             $scope.inpTask = '';

@@ -13,7 +13,7 @@
     <div>
         <ul>
             <li ng-repeat="task in tasks">
-                {{task.name}}
+                {{task.title}}
                 <a href="javascript:void(0);" ng-click="doneTask(task)" ng-hide="task.done">Task Done</a>
                 <span ng-show="task.done">&#10004;</span>
                 <a href="javascript:void(0);" ng-click="deleteTask(task)" ng-hide="task.done">Delete Task</a>
